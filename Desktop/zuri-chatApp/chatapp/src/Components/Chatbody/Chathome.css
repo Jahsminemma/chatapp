@@ -1,0 +1,52 @@
+.chathome {
+  text-align: center;
+  background-color: #000;
+  background-position: center;
+  object-fit: cover;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+
+.chathome__content {
+  width: 600px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 2px rgb(185, 182, 182);
+  border-radius: 10px;
+  color: gray;
+  margin-top: 80px;
+}
+
+@media (max-width: 600px) {
+  .chathome__content {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .chathome {
+    margin-top: 20px;
+  }
+}
+
+.chathome__content::-webkit-scrollbar {
+  display: none;
+}
+
+.chathome__content>img {
+  width: 200px;
+  border-radius: 30%;
+  filter: invert();
+  padding: 15px 0;
+}
+
+.chathome>p {
+  font-weight: 800;
+  color: rgb(17, 250, 238);
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 6%;
+  border-radius: 10px;
+  filter: invert();
+}

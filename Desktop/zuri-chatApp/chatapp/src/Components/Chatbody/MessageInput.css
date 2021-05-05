@@ -1,0 +1,117 @@
+.message__input {
+  position: fixed;
+  text-align: left;
+  bottom: 0px;
+  z-index: 4;
+  background-color: black;
+  width: 100%;
+}
+
+.message__input form textarea {
+  padding: 10px;
+  width: 80%;
+  margin-right: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #dddddd;
+  margin: 10px;
+  font-size: 14px;
+  position: relative;
+}
+
+.message__input form textarea::placeholder {
+  color: rgb(49, 47, 47);
+}
+
+.message__input form textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.message__input form textarea:focus {
+  border: none;
+  outline: none;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+  margin-left: 10px;
+  border: 0.5px solid#f95353;
+  border-radius: 20px;
+  margin: 4px;
+  margin-left: 10px;
+}
+
+form button {
+  top: 13px;
+  color: rgb(255, 253, 253);
+  background-color: #f95353;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border: none;
+}
+
+
+.file-input {
+  overflow: hidden;
+  position: absolute;
+  z-index: 8888888;
+  background-color: bisque;
+  left: 0%;
+  opacity: 0;
+  width: 130px;
+  z-index: -3;
+
+}
+
+.file-input+label {
+  display: inline-block;
+  border: 2px solid #f95353;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.file-input+label>.MuiSvgIcon-root {
+  color: rgb(1, 59, 92);
+  font-size: 25px;
+}
+
+@media (max-width: 800px) {
+  .message__input form textarea {
+    flex: 1;
+
+  }
+
+  form button>.MuiSvgIcon-root {
+    font-size: 18px;
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: 700px) {
+  .message__input form textarea {
+    width: 100%;
+    padding: 8px;
+    z-index: 1;
+  }
+
+  .message__input form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .message__input {
+    width: 100%;
+  }
+}

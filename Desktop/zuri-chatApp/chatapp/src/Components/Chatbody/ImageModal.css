@@ -1,0 +1,31 @@
+.reviewed__image {
+    position: absolute;
+    bottom: 70px;
+    margin-left: 10px;
+    background-color: #7bbcf8;
+    display: flex;
+    padding: 10px;
+    max-width: 300px;
+
+}
+
+.reviewed__image img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.reviewed__image .close {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    margin-right: 5px;
+    color: rgb(8, 7, 5);
+}
+
+@media (max-width:"500px") {
+    .reviewed__image {
+        z-index: 99999;
+
+    }
+}

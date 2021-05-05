@@ -1,0 +1,29 @@
+.userChatScreen {
+  background: #000;
+  color: black;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+  height: 90vh;
+}
+
+.userChatScreen::-webkit-scrollbar {
+  display: none;
+}
+
+.userChatScreen h2 {
+  position: absolute;
+  bottom: 0%;
+  margin-top: 70px;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .userChatScreen {
+    width: 100%;
+    margin-top: 0;
+
+  }
+}

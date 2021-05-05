@@ -1,0 +1,75 @@
+.sidebar {
+  background-color: #353535;
+  color: whitesmoke;
+  border-top: 1.5px solid rgb(6, 122, 175);
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  position: relative;
+  top: 41px;
+  user-select: none;
+  height: 90vh;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #353535;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgb(174, 179, 182);
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f95353;
+}
+
+
+.sidebar__details h4>img {
+  width: 60px;
+  height: 20px;
+  filter: invert();
+  margin: 5px 10px;
+  border-radius: 40%;
+}
+
+.sidebar__details h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.sidebar__details>h5 {
+  display: flex;
+  font-size: 0.8em;
+  align-items: center;
+  margin-top: 0.3em;
+  font-weight: 500;
+}
+
+.sidebar__details>h5>.MuiSvgIcon-root {
+  color: lime;
+  font-size: 14px;
+}
+
+.Sidebar__userOption>hr {
+  border-color: #6d6d6d;
+}
+
+@media (max-width:700px) {
+  .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.Sidebar__userOption:hover {
+  background-color: #161616;
+}

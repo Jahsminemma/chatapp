@@ -1,0 +1,26 @@
+.app {
+    width: 100%;
+
+}
+
+.app__body {
+    display: grid;
+    grid-template-columns: 250px auto;
+    height: 70vh;
+}
+
+@media (max-width: 900px) {
+    .app__body {
+        grid-template-columns: 200px auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .app__mobileView {
+        grid-template-columns: auto
+    }
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}

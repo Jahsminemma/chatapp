@@ -1,0 +1,29 @@
+.message__content {
+  display: inline-flex;
+  margin-top: 10px;
+  text-align: left;
+  border-radius: 15px;
+  border-bottom-right-radius: 0%;
+  margin: 5px;
+  padding: 4px;
+  background-color: rgb(252, 252, 252);
+  color: rgb(83, 81, 81);
+}
+
+.message:nth-child(1) {
+  margin-top: 70px;
+}
+
+.message__content>img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.message__content>.message__item>h4 {
+  font-size: 10px;
+  margin-right: 5px;
+  text-align: left;
+}

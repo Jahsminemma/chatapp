@@ -1,0 +1,40 @@
+.chat__header {
+  display: flex;
+  justify-content: space-between;
+  height: 41px;
+  align-items: center;
+  background-color: #6d6d6d;
+  position: sticky;
+  top: 60px;
+  width: 100%;
+  padding-right: 10px;
+  z-index: 1;
+}
+
+.chat__header .chat__details {
+  display: flex;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.chat__header .chat__backBtn {
+  margin-top: 10px;
+}
+
+.chat__header .channel__info {
+  margin-left: 10px;
+}
+
+@media (max-width: 700px) {
+  .chat__header .chat__details h4 {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .chat__header {
+    width: 100%;
+    margin-top: 0%;
+    position: fixed;
+    top: 54px;
+  }
+}
