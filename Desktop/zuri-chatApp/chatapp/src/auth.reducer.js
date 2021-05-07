@@ -20,7 +20,6 @@ const reducer = (state, action) => {
         case actionType.SET_USER:
             return {
                 ...state,
-                user: action.user,
                 authenticated: true,
             }
 
@@ -36,11 +35,9 @@ const reducer = (state, action) => {
                 ...initialState
             }
             break;
-        default:
-            return state
     }
     return state
 
 }
 
-export default reducer
+export reducer
